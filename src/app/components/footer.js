@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div className='footerContainer'>
       <div className='row justify-content-between'>
-        <div className='col-lg-8 text-sm-center text-xs-center'>
+        <div className='col-lg-8 text-lg-start text-sm-center text-xs-center'>
             <p>content &amp; images &copy; {year}. Built with <i class="fa-solid fa-heart"></i> using Wordpress + NextJS - source code availbe on <a href='https://github.com/tyron-hayman/portfolio-v2' target='_blank'>GitHub</a></p>
         </div>
         <div className='col-lg-4 text-lg-end text-sm-center text-xs-center'>

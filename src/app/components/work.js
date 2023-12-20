@@ -46,7 +46,7 @@ export default function Work({ heading, projects, content }) {
               proNavList += '<li><i class="fa-regular fa-calendar"></i>' + project.date + '</li>';
             }
             if ( project.link ) {
-              proNavList += '<li><a href="' + project.link + '" target="_blank">View</a></li>';
+              proNavList += '<li><a href="' + project.link + '" class="stretched-link" target="_blank">View</a></li>';
             }
             proNavList += '<ul>';
 

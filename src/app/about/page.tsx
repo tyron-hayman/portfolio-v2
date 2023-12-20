@@ -103,6 +103,17 @@ export default function About() {
             <h1 dangerouslySetInnerHTML={{__html: data.data.about.aboutFields.aboutHeading}}></h1>
             <div dangerouslySetInnerHTML={{__html: data.data.about.aboutFields.aboutContent}}></div>
           </div>
+
+          <div className='col-lg-12'>
+            <figure>
+              <blockquote className="blockquote">
+                <p>{data.data.themeSettingsNext.themeSettingsFields.footerQuote}</p>
+              </blockquote>
+              <figcaption className="blockquote-footer">
+                <cite title={data.data.themeSettingsNext.themeSettingsFields.footerQuoteAuthor}>{data.data.themeSettingsNext.themeSettingsFields.footerQuoteAuthor}</cite>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
       <Footer />

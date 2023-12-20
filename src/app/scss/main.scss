@@ -276,19 +276,44 @@ body, html {
     margin-top: 150px;
     margin-bottom: 250px;
     h1 {
-        font-size: 3.75rem;
-        font-weight: 500!important;
+        background: rgba($color: #132041, $alpha: 0.7);
+        display: inline-block;
+        margin: 10px auto;
+        font-size: 0.8rem;
         color: $white;
+        padding: 10px 20px;
+        @include borderRadius(9999px);
     }
     h3 {
-        border: rgba($color: $textMain, $alpha: 0.2) 1px solid;
         display: block;
-        margin: 50px 0;
-        font-size: 1.5;
-        line-height: 3rem;
+        margin: 0 0 30px 0;
+        font-size: 2.75rem;
+        line-height: 4rem;
         color: $white;
-        padding: 5%;
         font-weight: 400;
         @include borderRadius(5px);
+        @media (max-width:600px) {
+            font-size: 1.75rem;
+            line-height: 3rem;
+        }
+    }
+    figure {
+        background: $highlight;
+        padding: 5%;
+        margin-top: 50px;
+        @include borderRadius(5px);
+        .blockquote {
+            p {
+                color: $white;
+                @media (max-width:600px) {
+                    font-size: 0.9rem;
+                    line-height: 1.75rem;
+                }
+            }
+            margin-bottom: 30px;
+        }
+        .blockquote-footer {
+                color: rgba($color: $white, $alpha: 0.5);
+        }
     }
 }

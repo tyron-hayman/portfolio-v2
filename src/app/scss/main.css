@@ -343,21 +343,56 @@ body, html {
   margin-bottom: 250px;
 }
 #aboutContainer h1 {
-  font-size: 3.75rem;
-  font-weight: 500 !important;
+  background: rgba(19, 32, 65, 0.7);
+  display: inline-block;
+  margin: 10px auto;
+  font-size: 0.8rem;
   color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -o-border-radius: 9999px;
 }
 #aboutContainer h3 {
-  border: rgba(160, 192, 232, 0.2) 1px solid;
   display: block;
-  margin: 50px 0;
-  font-size: 1.5;
-  line-height: 3rem;
+  margin: 0 0 30px 0;
+  font-size: 2.75rem;
+  line-height: 4rem;
   color: #ffffff;
-  padding: 5%;
   font-weight: 400;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
+}
+@media (max-width: 600px) {
+  #aboutContainer h3 {
+    font-size: 1.75rem;
+    line-height: 3rem;
+  }
+}
+#aboutContainer figure {
+  background: #048aff;
+  padding: 5%;
+  margin-top: 50px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#aboutContainer figure .blockquote {
+  margin-bottom: 30px;
+}
+#aboutContainer figure .blockquote p {
+  color: #ffffff;
+}
+@media (max-width: 600px) {
+  #aboutContainer figure .blockquote p {
+    font-size: 0.9rem;
+    line-height: 1.75rem;
+  }
+}
+#aboutContainer figure .blockquote-footer {
+  color: rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=main.css.map */
