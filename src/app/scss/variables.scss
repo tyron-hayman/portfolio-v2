@@ -1,0 +1,94 @@
+// Variables
+$black : #000000;
+$bgColor : #03050A;
+$white : #ffffff;
+$textMain : #A0C0E8;
+$highlight : #048aff;
+
+// Mixins
+
+@mixin borderRadius($rad) {
+    border-radius: $rad;
+    -webkit-border-radius: $rad;
+    -moz-border-radius: $rad;
+    -o-border-radius: $rad;
+}
+
+@mixin bgSize($size) {
+    background-size: $size;
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+}
+
+@mixin transition($method) {
+    transition: $method;
+    -webkit-transition: $method;
+    -moz-transition: $method;
+    -o-transition: $method;
+}
+
+@mixin transform($method) {
+    transform: $method;
+    -webkit-transform: $method;
+    -moz-transform: $method;
+    -o-transform: $method;
+}
+
+@mixin boxShadow($method) {
+    box-shadow: $method;
+    -webkit-box-shadow: $method;
+    -moz-box-shadow: $method;
+    -o-box-shadow: $method;
+}
+
+@mixin animations($method) {
+    animation: $method;
+    -webkit-animation: $method;
+    -moz-animation: $method;
+    -o-animation: $method;
+}
+
+// Animations
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes l12 {
+    0%   {background-position: 50%  0,100% 100%,0    100%,0 0}
+    25%  {background-position: 0    0,100% 50% ,0    100%,0 0}
+    50%  {background-position: 0    0,100% 0   ,50%  100%,0 0}
+    75%  {background-position: 0    0,100% 0   ,100% 100%,0 50%}
+   75.01%{background-position: 100% 0,100% 0   ,100% 100%,0 50%}
+    100% {background-position: 50%  0,100% 0   ,100% 100%,0 100%}
+  }
+
+  @-webkit-keyframes l12 {
+    0%   {background-position: 50%  0,100% 100%,0    100%,0 0}
+    25%  {background-position: 0    0,100% 50% ,0    100%,0 0}
+    50%  {background-position: 0    0,100% 0   ,50%  100%,0 0}
+    75%  {background-position: 0    0,100% 0   ,100% 100%,0 50%}
+   75.01%{background-position: 100% 0,100% 0   ,100% 100%,0 50%}
+    100% {background-position: 50%  0,100% 0   ,100% 100%,0 100%}
+  }

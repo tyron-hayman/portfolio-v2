@@ -1,0 +1,266 @@
+@import "variables";
+
+// typography
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif!important;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+    color: rgba($color: $textMain, $alpha: 0.5);
+    font-weight: 400;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    border-bottom: $white 2px solid;
+    &:hover {
+        color: $highlight;
+        border-color: $highlight;
+    }
+}
+
+// Global
+
+body, html {
+    background: $bgColor;
+}
+
+.loadingWrap {
+    position: fixed;
+    background: $black;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1100;
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    grid-area: 1/1;
+    margin: 0 0 15px 15px;
+    --c:#0000 calc(100%/3),#046D8B 0 calc(2*100%/3),#0000 0;
+    --c1:linear-gradient(90deg,var(--c));
+    --c2:linear-gradient( 0deg,var(--c));
+    background: var(--c1),var(--c2),var(--c1),var(--c2);
+    background-size: 300% 4px,4px 300%;
+    background-repeat: no-repeat;
+    animation: l12 1s infinite linear;
+  }
+  .loader:after {
+    margin: 15px 15px 0 0;
+    transform: scale(-1,-1);
+  }
+} 
+
+.container-outer {
+    background: $bgColor;
+    width: 1400px;
+    margin: 0 auto;
+    @media (max-width: 1400px) {
+        width: 90%;
+    }
+}
+
+.container-inner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    a {
+        color: $white;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-size: 1rem;
+        border: none;
+        i {
+            font-size: 0.75rem;
+            color:  $highlight;
+            @include animations(blink 1s linear infinite);
+        }
+        &:hover {
+            color: $highlight;
+        }
+    }
+}
+
+.footerContainer {
+    border-top: rgba($color: $textMain, $alpha: 0.2) 1px solid;
+    padding: 20px 0;
+    p {
+        font-size: 0.75rem;
+    }
+    a {
+        border: none;
+        font-size: 1.1rem;
+        display: inline-block;
+        padding: 0 15px;
+    }
+}
+
+// Landing page
+
+#landingContainer {
+    margin-top: 150px;
+    margin-bottom: 250px;
+    text-align: center;
+    h1 {
+        font-size: 3.75rem;
+        font-weight: 500!important;
+        color: $white;
+    }
+    h2 {
+        background: rgba($color: #132041, $alpha: 0.7);
+        display: inline-block;
+        margin: 10px auto;
+        font-size: 0.8rem;
+        color: $white;
+        padding: 10px 20px;
+        @include borderRadius(9999px);
+    }
+}
+
+.workContainer {
+    padding-bottom: 300px;
+    h2 {
+        text-align: center;
+        color: $white;
+        font-size: 2.5rem;
+    }
+    h3 {
+        color: $white;
+        font-size: 1.25rem;
+    }
+    p {
+        text-align: center;
+    }
+    .projectBoxesWrap {
+        position: relative;
+        opacity: 1;
+        @include transition(all 0.35s);
+        &.faded {
+            opacity: 0.75;
+            filter: blur(4px);
+            @include transform(scale(0.9));
+        }
+        &.highlight {
+            .projectBoxes {
+                @include boxShadow(rgba($color : $white, $alpha : 0.1) 0px 0px 41px);
+            }
+        }
+    }
+    .projectBoxes {
+        border: rgba($color: $textMain, $alpha: 0.2) 1px solid;
+        @include borderRadius(5px);
+        padding: 8%;
+        margin-bottom: 30px;
+        @include transition(all 0.35s);
+        p {
+            text-align: left!important;
+            font-size: 0.85rem;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                font-size: 0.85rem;
+                color: $white;
+                i {
+                    margin-right: 10px;
+                    color: rgba($color: $white, $alpha: 0.3);
+                }
+                a {
+                    display: inline-block;
+                    margin: 10px auto;
+                    color: $white;
+                    padding: 10px 20px;
+                    font-size: 0.75rem;
+                    border: $white 1px solid;
+                    @include borderRadius(10px);
+                    text-decoration: none;
+                    @include transition(all 0.35s);
+                    &:hover {
+                        background: $highlight;
+                        border-color: $highlight;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contactContainer {
+    padding-bottom: 300px;
+    text-align: center;
+    h2 {
+        text-align: center;
+        color: $white;
+        font-size: 3.75rem;
+    }
+    h3 {
+        color: $white;
+        font-size: 1.25rem;
+    }
+    p {
+        text-align: center;
+    }
+    a {
+        display: inline-block;
+        margin: 10px auto;
+        color: $white;
+        padding: 10px 20px;
+        border: $white 1px solid;
+        @include borderRadius(10px);
+        text-decoration: none;
+        @include transition(all 0.35s);
+        &:hover {
+            background: $highlight;
+            border-color: $highlight;
+        }
+    }
+}
+
+// About
+
+#aboutContainer {
+    margin-top: 150px;
+    margin-bottom: 250px;
+    h1 {
+        font-size: 3.75rem;
+        font-weight: 500!important;
+        color: $white;
+    }
+    h3 {
+        border: rgba($color: $textMain, $alpha: 0.2) 1px solid;
+        display: block;
+        margin: 50px 0;
+        font-size: 1.5;
+        line-height: 3rem;
+        color: $white;
+        padding: 5%;
+        font-weight: 400;
+        @include borderRadius(5px);
+    }
+}

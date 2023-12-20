@@ -1,0 +1,31 @@
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes l12 {
+  0% {
+    background-position: 50% 0, 100% 100%, 0 100%, 0 0;
+  }
+  25% {
+    background-position: 0 0, 100% 50%, 0 100%, 0 0;
+  }
+  50% {
+    background-position: 0 0, 100% 0, 50% 100%, 0 0;
+  }
+  75% {
+    background-position: 0 0, 100% 0, 100% 100%, 0 50%;
+  }
+  75.01% {
+    background-position: 100% 0, 100% 0, 100% 100%, 0 50%;
+  }
+  100% {
+    background-position: 50% 0, 100% 0, 100% 100%, 0 100%;
+  }
+}/*# sourceMappingURL=variables.css.map */
