@@ -74,13 +74,13 @@ const query = `{
 }`;
 
 const wpData = (args: any) => {
+
   return fetch(args, {
     method: 'POST',
-
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
     },
-
+    cache : 'no-cache',
     body: JSON.stringify({
       query: query
     })
@@ -89,12 +89,10 @@ const wpData = (args: any) => {
 }
 
 export default function Home() {
-  const { data, error } = useSWR('http://wp.tyronhayman.com/graphql/', wpData);
+  const { data, error } = useSWR(process.env.NEXT_PUBLIC_WP_URL, wpData);
  
   if (error) return <div>Failed to load</div>
   if (!data) return <div className='loadingWrap'><div className="loader"></div></div>
-
-  console.log(data.data);
 
   return (
     <div className='container-outer'>
@@ -110,7 +108,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Work heading={data.data.home.homepageField.landingContent} projects={data.data.home.homepageField.projects} content={data.data.home.homepageField.workContent} />
+      <Work heading={data.data.home.homepageField.workHeading} projects={data.data.home.homepageField.projects} content={data.data.home.homepageField.workContent} />
       <Contact heading={data.data.contact.contactFields.contactTitle} content={data.data.contact.contactFields.contactContent} details={data.data.contact.contactFields.contactEmail} />
       <Footer />
     </div>

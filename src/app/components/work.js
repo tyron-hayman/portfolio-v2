@@ -31,7 +31,7 @@ export default function Work({ heading, projects, content }) {
         <div className='col-lg-12'>
             <h2>Featured Work</h2>
         </div>
-        <div className='col-lg-6'>
+        <div className='col-lg-8'>
             <p>{heading}</p>
         </div>
       </div>
@@ -51,7 +51,7 @@ export default function Work({ heading, projects, content }) {
             proNavList += '<ul>';
 
             return(
-                    <div className="col-lg-6 projectBoxesWrap" key={i}>
+                    <div className="col-lg-6 projectBoxesWrap cursorChange" key={i}>
                         <div className='projectBoxes'>
                             <h3 className="projects-text">{project.name}</h3>
                             <p>{project.content}</p>

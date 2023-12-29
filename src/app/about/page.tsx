@@ -76,7 +76,7 @@ const wpData = (args: any) => {
     method: 'POST',
 
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
     },
 
     body: JSON.stringify({
@@ -87,7 +87,7 @@ const wpData = (args: any) => {
 }
 
 export default function About() {
-  const { data, error } = useSWR('http://wp.tyronhayman.com/graphql', wpData);
+  const { data, error } = useSWR(process.env.NEXT_PUBLIC_WP_URL, wpData);
  
   if (error) return <div>Failed to load</div>
   if (!data) return <div className='loadingWrap'><div className="loader"></div></div>

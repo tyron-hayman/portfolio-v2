@@ -18,6 +18,14 @@ p {
     font-weight: 400;
 }
 
+label {
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+    color: rgba($color: $textMain, $alpha: 0.5);
+    font-weight: 400;
+}
+
 a {
     color: $white;
     text-decoration: none;
@@ -29,6 +37,44 @@ a {
 }
 
 // Global
+
+* {
+    cursor: none;
+}
+
+#mouseTracker {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    background: $highlight;
+    @include borderRadius(50%);
+    pointer-events: none;
+    @include transition(all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1));
+    opacity: 0;
+    &.show {
+        opacity: 1;
+    }
+    &.hovered {
+        @include transform(scale(3));
+        background: $red;
+        &::after {
+            content: "VIEW";
+            display: block;
+            text-align: center;
+            font-size: 0.3rem;
+            color: $white;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 30%;
+            font-weight: 100;
+        }
+    }
+}
 
 body, html {
     background: $bgColor;
@@ -99,7 +145,7 @@ body, html {
         font-size: 1rem;
         border: none;
         padding: 5px 0;
-        margin: 0;
+        margin: 0 20px 0 0;
         i {
             font-size: 0.75rem;
             color:  $highlight;
@@ -183,7 +229,7 @@ body, html {
     .projectBoxesWrap {
         position: relative;
         opacity: 1;
-        @include transition(all 0.35s);
+        @include transition(all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1));
         &.faded {
             opacity: 0.75;
             filter: blur(4px);
@@ -316,4 +362,24 @@ body, html {
                 color: rgba($color: $white, $alpha: 0.5);
         }
     }
+}
+
+// Clients
+
+#loginForm {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    background: $black;
+    padding: 10%;
+    @include borderRadius(10px);
+    border: rgba($color: $textMain, $alpha: 0.2) 1px solid;
+    h2 {
+        color: $white;
+        font-size: 3.75rem;
+    }
+    label {
+        font-size: 0.9rem;
+        margin-bottom: 0px;
+    }
+
 }

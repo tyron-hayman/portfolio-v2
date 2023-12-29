@@ -1,0 +1,150 @@
+{
+    "themeSettingsNext": {
+        "themeSettingsFields": {
+            "footerQuote": "I always appreciate working with Tyron. I know him from a previous career and stand by his technical knowledge when it comes to anything that needs to exist and serve users on the web. Added bonus is he has a good aptitude for design. I can send him a copydeck and be confident he’ll make the layout and look fit the brand.",
+            "footerQuoteAuthor": "Sid Saraiya  ( Effinlazy )",
+            "toastContent": "This website uses cookies to ensure you have the best experience.",
+            "toggleToast": null
+        }
+    },
+    "home": {
+        "homepageField": {
+            "landingHeading": "Hi I'm Ty.",
+            "landingContent": "My passion is turning designs and work flows into engaging interactive experiences.",
+            "openWorkBox": "A seasoned front-end developer based in the vibrant city of Vancouver, BC, Canada.",
+            "workHeading": "I have had the privilege to be apart of some amazing projects. Here are a few of the most recent I have completed.",
+            "workContent": "Interested in working with me or have a full time opportunity? <a href=\"mailto:tyron.hayman@gmail.com\">Get in touch</a>.",
+            "welcomes": [
+                {
+                    "phrase": "Hello"
+                },
+                {
+                    "phrase": "سلام"
+                },
+                {
+                    "phrase": "こんにちは"
+                },
+                {
+                    "phrase": "مرحبًا"
+                },
+                {
+                    "phrase": "Hola"
+                },
+                {
+                    "phrase": "你好"
+                },
+                {
+                    "phrase": "Bonjour"
+                }
+            ],
+            "projects": [
+                {
+                    "name": "EffinLazy",
+                    "attribution": "Freelance",
+                    "content": "I was responsible for the web development and design of this project, working closely with the client to achieve their vision.",
+                    "date": "2023",
+                    "image": "https://tyronhayman.com/images/sid.png",
+                    "link": "https://effinlazy.com/"
+                },
+                {
+                    "name": "Anxiety Canada",
+                    "attribution": "Sparkjoy Studios",
+                    "content": "As the lead Front End Developer for Anxiety Canada, I worked closely with the design team to turn the design into a function project.",
+                    "date": "2022",
+                    "image": "https://tyronhayman.com/images/ac.png",
+                    "link": "https://www.anxietycanada.com/"
+                },
+                {
+                    "name": "BIG",
+                    "attribution": "Sparkjoy Studios",
+                    "content": "Working closely with the design team as the lead Front End Developer on BIG, I developed a function project based on design mockups and client feedback.",
+                    "date": "2022",
+                    "image": "https://tyronhayman.com/images/big.png",
+                    "link": "https://biglobalization.org/"
+                },
+                {
+                    "name": "More Coming Soon",
+                    "attribution": null,
+                    "content": "2024 is just beginning and I look forward to be apart of more exciting and challenging projects",
+                    "date": null,
+                    "image": null,
+                    "link": null
+                }
+            ]
+        }
+    },
+    "about": {
+        "aboutFields": {
+            "aboutContent": "<h3>I am a seasoned web developer based in the vibrant city of Vancouver, BC, Canada, with a rich experience spanning over a decade in the ever-evolving digital landscape.</h3>\n<p>My journey in the world of web development has been nothing short of exhilarating. Over the years, I&#8217;ve had the privilege of working on diverse and challenging projects that have not only honed my skills but also fueled my passion for creating seamless and visually appealing online experiences. Vancouver&#8217;s dynamic tech scene has provided me with the perfect backdrop to thrive, inspiring me to push myself beyond my comfort zone and grow.</p>\n<p>What sets me apart is not my technical proficiency, but my unwavering dedication to continuous learning and growth. I thrive on challenging projects that not only test my abilities but also expand my horizons. Beyond coding, I believe in the power of collaboration and communication. I love working closely with clients and fellow professionals, understanding their unique visions, and transforming them into captivating digital experiences. My goal is to not only meet expectations but to exceed them, delivering solutions that resonate with users and leave a lasting impression.</p>\n<p>Whether you&#8217;re a business owner looking to enhance your online presence or a fellow developer seeking collaboration, I&#8217;m here to bring your ideas to life. Let&#8217;s embark on this creative journey together, thank you for visiting, and I look forward to the opportunity of working with you.</p>\n",
+            "aboutHeading": "Who I Am",
+            "aboutImage": "https://tyronhayman.com/images/tyron_ai.jpg",
+            "skillsContent": "Each project I am privileged to be apart of has it's own set of puzzles to solve. Here are some of the skills I used to find solutions to these puzzles.",
+            "skillsHeading": "Here's what I can do..",
+            "skillsList": [
+                {
+                    "skills": "HMTL / CSS "
+                },
+                {
+                    "skills": "SCSS"
+                },
+                {
+                    "skills": "PHP"
+                },
+                {
+                    "skills": "Javascript / jQuery"
+                },
+                {
+                    "skills": "Wordpress"
+                },
+                {
+                    "skills": "NextJS / React"
+                }
+            ]
+        }
+    },
+    "contact": {
+        "contactFields": {
+            "contactContent": "If you have any projects you'd like to collaborate on or have any employment opportunities, let's get in touch!",
+            "contactEmail": "tyron.hayman@gmail.com",
+            "contactTitle": "Let's work together"
+        }
+    },
+    "menus": {
+        "nodes": [
+            {
+                "menuItems": {
+                    "edges": [
+                        {
+                            "node": {
+                                "url": "https://read.cv/tyron",
+                                "label": "CV",
+                                "target": "_blank"
+                            }
+                        },
+                        {
+                            "node": {
+                                "url": "https://ca.linkedin.com/in/tyronhayman",
+                                "label": "LinkedIn",
+                                "target": "_blank"
+                            }
+                        },
+                        {
+                            "node": {
+                                "url": "https://dribbble.com/tyhayman",
+                                "label": "Dribbble",
+                                "target": "_blank"
+                            }
+                        },
+                        {
+                            "node": {
+                                "url": "https://github.com/tyron-hayman",
+                                "label": "GitHub",
+                                "target": "_blank"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+  }

@@ -9,7 +9,7 @@ export default function Contact({ heading, content, details }) {
         <div className='col-lg-8'>
             <h2>{heading}</h2>
             <p>{content}</p>
-            <a href={`mailto:${details}`}>Get in touch</a>
+            <a className='cursorChange' href={`mailto:${details}`}>Get in touch</a>
         </div>
       </div>
     </div>
